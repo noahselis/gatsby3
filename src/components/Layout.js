@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "gatsby";
 import { GlobalStyles } from "../styles/globalStyles";
 import Nav from "./Nav";
 import styled from "styled-components";

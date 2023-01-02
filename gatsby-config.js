@@ -3,8 +3,10 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `gatsby3`,
+    author: 'Noah Selis',
+    description: `just messin' around, feelin pretty cute tbh`,
     siteUrl: `https://www.yourdomain.tld`,
+    title: `gatsby3`,
   },
   plugins: [
     {

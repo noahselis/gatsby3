@@ -5,7 +5,7 @@ import styled from 'styled-components'
 const NavStyles = styled.nav`
   ul {
     display: grid;
-    grid-template-columns: 1fr repeat(3, 100px);
+    grid-template-columns: 100px 1fr repeat(3, 100px);
     grid-template-rows: 50px;
     column-gap: 1rem;
     align-items: center;
@@ -37,6 +37,9 @@ export default function Nav({}) {
         </li>
         <li>
           <Link to="/about">About</Link>
+        </li>
+        <li>
+          <Link to="/blog">Blog</Link>
         </li>
         <li>
           <Link to="/contact">Contact</Link>

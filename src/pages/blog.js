@@ -1,7 +1,7 @@
 import { Link, graphql } from 'gatsby'
 import * as React from 'react'
 import Layout from '../components/Layout'
-import * as DOMPurify from 'dompurify'
+import DOMPurify from 'dompurify'
 import styled from 'styled-components'
 
 const DangerStyles = styled.p`

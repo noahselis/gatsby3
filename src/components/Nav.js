@@ -5,34 +5,44 @@ import styled from 'styled-components'
 const NavStyles = styled.nav`
   ul {
     display: grid;
-    grid-template-columns: 100px 1fr repeat(3, 100px);
-    grid-template-rows: 50px;
-    column-gap: 1rem;
+    /* grid-template-columns: 200px auto repeat(8, 1fr);
+    grid-template-rows: 75px; */
+    /* grid-template-columns: repeat(auto-fit, 150px); */
+    grid-template-columns: 1fr;
+    grid-auto-flow: column;
+    justify-content: start;
+    column-gap: 0.5rem;
     align-items: center;
-    margin: 0;
-    padding: 0;
+    justify-items: center;
     text-align: center;
     list-style: none;
     li {
-      height: fit-content;
       border: 1px solid blue;
+      /* &:first-child {
+        margin-left: 1rem;
+      } */
+      /* &:nth-child(2) {
+        grid-column-start: 7;
+      } */
+      &.logo {
+        justify-self: start;
+        border: 1px solid red;
+      }
     }
     a {
       text-decoration: none;
-    }
-    .logo {
     }
   }
   border: 1px solid red;
 `
 
-export default function Nav({}) {
+export default function Nav() {
   return (
     <NavStyles>
       <ul>
-        <li>
-          <Link to="/" className="logo">
-            Home
+        <li className='logo'>
+          <Link to="/" >
+            A Very Good Website
           </Link>
         </li>
         <li>

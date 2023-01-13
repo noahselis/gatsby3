@@ -1,15 +1,14 @@
 import * as React from 'react'
+import styled from 'styled-components'
 import GlobalStyles from '../styles/GlobalStyles'
 import { Typography } from '../styles/Typography'
 import Nav from './Nav'
-import styled from 'styled-components'
 import Footer from './Footer'
 
 const SiteBorderStyles = styled.div`
   max-width: 1400px;
   margin: 2rem auto;
   padding: clamp(5px, 1vw, 25px);
-
   border: 1px solid black;
 `
 

@@ -5,7 +5,7 @@ module.exports = {
   siteMetadata: {
     author: 'Noah Selis',
     description: `just messin' around, feelin pretty cute tbh`,
-    siteUrl: `https://www.yourdomain.tld`,
+    siteUrl: `https://gatsby3main53722.gatsbyjs.io/`,
     title: `gatsby3`,
   },
   plugins: [
@@ -13,9 +13,6 @@ module.exports = {
       resolve: 'gatsby-source-wordpress',
       options: {
         url: 'https://gatsbywordpres.wpengine.com/graphql',
-        protocol: 'https',
-        hostingWPCOM: false,
-        useACF: true,
       },
     },
     {

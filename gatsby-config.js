@@ -15,10 +15,12 @@ module.exports = {
         url: 'https://gatsbywordpres.wpengine.com/graphql',
       },
     },
+    {
+      resolve: `gatsby-plugin-styled-components`,
+    },
     'gatsby-plugin-image',
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
-    'gatsby-plugin-styled-components',
     'gatsby-plugin-sitemap',
     {
       resolve: 'gatsby-plugin-manifest',

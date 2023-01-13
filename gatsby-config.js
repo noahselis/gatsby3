@@ -12,7 +12,10 @@ module.exports = {
     {
       resolve: 'gatsby-source-wordpress',
       options: {
-        url: 'https://gatsbywordpres.wpengine.com/graphql',
+        baseUrl: 'https://gatsbywordpres.wpengine.com/graphql',
+        protocol: 'https',
+        hostingWPCOM: false,
+        useACF: true,
       },
     },
     {

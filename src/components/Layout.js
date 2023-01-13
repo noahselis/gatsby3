@@ -1,5 +1,5 @@
 import * as React from 'react'
-import GlobalStyles from '../styles/GlobalStyles.js'
+import GlobalStyles from '../styles/GlobalStyles'
 import { Typography } from '../styles/Typography'
 import Nav from './Nav'
 import styled from 'styled-components'
@@ -16,16 +16,18 @@ const SiteBorderStyles = styled.div`
 export default function Layout({ pageTitle, children }) {
   return (
     <>
-      <GlobalStyles />
-      <Typography />
-      <SiteBorderStyles>
-        <Nav />
-        <main>
-          <h1>{pageTitle}</h1>
-          {children}
-        </main>
-        <Footer />
-      </SiteBorderStyles>
+      <GlobalStyles>
+        <Typography>
+          <SiteBorderStyles>
+            <Nav />
+            <main>
+              <h1>{pageTitle}</h1>
+              {children}
+            </main>
+            <Footer />
+          </SiteBorderStyles>
+        </Typography>
+      </GlobalStyles>
     </>
   )
 }

@@ -1,4 +1,4 @@
-import React from 'react'
+import * as React from 'react'
 import styled from 'styled-components'
 import { FaFacebookF as Facebook } from '@react-icons/all-files/fa/FaFacebookF'
 import { FaInstagram as Instagram } from '@react-icons/all-files/fa/FaInstagram'

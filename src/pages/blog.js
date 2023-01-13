@@ -1,7 +1,6 @@
 import { Link, graphql } from 'gatsby'
 import * as React from 'react'
 import Layout from '../components/Layout'
-import DOMPurify from 'dompurify'
 import styled from 'styled-components'
 
 const DangerStyles = styled.p`
@@ -13,11 +12,6 @@ export default function BlogPage({ data }) {
   const posts = data.allWpPost.nodes
   console.log({ posts })
 
-const dps = (dirty) => {
-    const clean = DOMPurify.sanitize(dirty)
-    return clean
-}
-
   return (
     <Layout>
       {posts.map((post) => (
@@ -26,7 +20,7 @@ const dps = (dirty) => {
           <p>{post.author.node.name} - {post.date}</p>
           <p>{post.title}</p>
           <p>{post.content}</p>
-          <DangerStyles dangerouslySetInnerHTML={{ __html: dps(post.content) }}></DangerStyles>
+          <DangerStyles dangerouslySetInnerHTML={{ __html: post.content }}></DangerStyles>
         </div>
       ))}
       <Link to="/">home</Link>

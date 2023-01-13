@@ -1,9 +1,9 @@
-import React from "react";
-import GlobalStyles from "../styles/GlobalStyles";
-import { Typography } from '../styles/Typography';
-import Nav from "./Nav";
-import styled from "styled-components";
-import Footer from "./Footer";
+import React from 'react'
+import { GlobalStyles } from '../styles/GlobalStyles.js'
+import { Typography } from '../styles/Typography'
+import Nav from './Nav'
+import styled from 'styled-components'
+import Footer from './Footer'
 
 const SiteBorderStyles = styled.div`
   max-width: 1400px;
@@ -13,19 +13,19 @@ const SiteBorderStyles = styled.div`
   border: 1px solid black;
 `
 
-export default function Layout({pageTitle, children}) {
-    return (
-        <>
-        <GlobalStyles />
-        <Typography />
-        <SiteBorderStyles>
-            <Nav />
-            <main>
-                <h1>{pageTitle}</h1>
-                {children}
-            </main>
-            <Footer />
-        </SiteBorderStyles>
-        </>
-    )
+export default function Layout({ pageTitle, children }) {
+  return (
+    <>
+      <GlobalStyles />
+      <Typography />
+      <SiteBorderStyles>
+        <Nav />
+        <main>
+          <h1>{pageTitle}</h1>
+          {children}
+        </main>
+        <Footer />
+      </SiteBorderStyles>
+    </>
+  )
 }

@@ -12,7 +12,7 @@ module.exports = {
     {
       resolve: 'gatsby-source-wordpress',
       options: {
-        url: ' http://gatsbywordpresshomepage.local/graphql',
+        url: 'https://gatsbywordpres.wpengine.com/graphql.',
       },
     },
     'gatsby-plugin-image',

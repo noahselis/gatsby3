@@ -1,6 +1,6 @@
 import { createGlobalStyle } from 'styled-components'
 
-export const GlobalStyles = createGlobalStyle`
+const GlobalStyles = createGlobalStyle`
   :root {
     --red: #FF4949;
     --black: #2E2E2E;
@@ -33,3 +33,4 @@ img {
     image-rendering: pixelated;
   }
 `
+export default GlobalStyles

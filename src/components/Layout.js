@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { GlobalStyles } from '../styles/GlobalStyles.js'
+import GlobalStyles from '../styles/GlobalStyles.js'
 import { Typography } from '../styles/Typography'
 import Nav from './Nav'
 import styled from 'styled-components'
